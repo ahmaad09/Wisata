@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+header {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+navbar-nav {
+    color: #555555;
+}
+
+.navbar-nav a {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.navbar-nav a:hover {
+    color: orange;
+    border-bottom: 1.2px solid black;
+}
+
+/* jumbotron */
+.jumbotron {
+    width: 100%;
+    height: 80vh;
+    background-image: url(/assets/image/desktop.adapt.1920.high.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.gambar {
+    position: absolute;
+    left: 80px;
+    top: 90px;
+}
+
+.tombol {
+    position: relative;
+    top: 460px;
+    left: 80px;
+
+}
+
+.tombol .putih {
+    background-color: #ffffff;
+    position: absolute;
+    left: 120px;
+}
+
+/* akhir Jumbotron */
+
+/* Awal Konten 1 */
+.gambar-content {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.8s ease, filter 0.8s ease;
+}
+
+.gambar-content::after {
+    top: 0;
+    content: '';
+    background: linear-gradient(to right, rgba(102, 98, 98, 0.041), rgba(255, 255, 255, 0.352));
+    background-size: cover;
+    position: absolute;
+    display: block;
+    width: 100%;
+    z-index: 0;
+}
+
+.gambar-content:hover {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+
+.position-relative:hover .text-overlay {
+    opacity: 1;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 28px;
+}
+
+/* Akhir Konten 1 */
+
+/* Konten 2 */
+.gamb-conten2 {
+    border-radius: 10px;
+    max-width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+span {
+    position: absolute;
+    top: 370px;
+    right: 50px;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Konten 2 */
+
+/* Tempat Populer */
+.container h2 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    color: #004165;
+    font-size: 32px;
+    line-height: 32px;
+    font-style: normal;
+    text-wrap: u;
+}
+
+.menu button {
+    color: #555555;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.menu button:hover {
+    border: 1px solid #004165;
+}
+
+.col .gam-populer {
+   border-radius: 10px;
+   transition: transform 0.8s ease, filter 0.8s ease;
+}
+
+.col .gam-populer:hover {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+
+.gam-populer {
+    position: relative;
+    width: 100%;
+    margin: 5px;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 10px; /* Atur posisi vertikal teks */
+    color: white; /* Warna teks */
+    padding: 5px; /* Padding teks */
+    border-radius: 5px; /* Sudut tumpul */
+}
+/* akhir tempat popuker */
+.container .header-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.borobudur {
+    position: absolute;
+    bottom: -100px;
+    left: 150px;
+}
+
+.text {
+    position: absolute;
+    bottom: 20px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* panduan */
+.container #panduan {
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.text-keteranga {
+    position: absolute;
+    bottom: 170px; /* Atur posisi teks dari bawah */
+    left: 20px;  /* Atur posisi teks dari kiri */
+    color: white;
+    padding: 5px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 32px;
+    font-style: normal;
+    text-wrap: u;
+}
+.panduan {
+    border-radius: 10px;
+}
+/* akhir panduan */
+
+
+/* AVIATOUR */
+.AVIATOUR {
+    margin-top: 100px;
+    /* text-align: right; */
+}
+
+.text-left {
+    text-align: right;
+}
+
+.text-right {
+    text-align: left;
+}
+
+/* footer */
+footer {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    color: #f6eeee;
+    margin-top: 50px;
+}
