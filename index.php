@@ -1,3 +1,6 @@
+<?php
+include("header.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,53 +22,25 @@
 </head>
 
 <body>
-    <!-- awal header -->
-    <header class="main-nav navbar navbar-expand-md sticky-top">
-        <div class="container">
-            <img src="assets/image/logo.png" alt="" class="main-brand navbar-brand img-fluid" width="80px">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
-                style="border: none;">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto py-3">
-                    <a href="" class="nav-link" aria-current="page">Dapatkan Inspirasi</a>
-                    <a href="/rigester.html" class="nav-link px-3">Destinasi Wisata</a>
-                    <a href="" class="nav-link px-3">Aktifitas</a>
-                    <a href="" class="nav-link px-3">Rencana Perjalanan Anda</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- akhir header -->
 
-    <!-- Awal jumbotron -->
-    <div class="jumbotron" data-aos="fade-up">
+   <!-- Awal jumbotron -->
+    <div class="jumbotron " data-aos="fade-up">
+        <img src="assets/image/desktop.adapt.1920.high.jpg" alt="" class="jumbotron">
         <div class="row">
             <div class="col-md-6">
                 <img src="assets/image/gday-in-lockup-shadow.png" alt="" width="400px" class="img-fluid gambar">
             </div>
         </div>
-        <div class="tombol">
-            <div class="row">
-                <div class="col-md-3">
-                    <button class="btn btn-warning p-2">Tonton Film</button>
-                </div>
-                <div class="col-md-3">
-                    <button class="btn btn-light p-2 putih">Temukan Petualangan Anda</button>
-                </div>
-            </div>
-        </div>
     </div>
-    <!-- Akhir Jumbotron -->  
+    <!-- Akhir Jumbotron -->
 
     <!-- Awal Konten -->
     <main class="my-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 position-relative" data-aos="fade-up">
-                    <a href="https://www.youtube.com/"><img src="assets/image/bogor-v1.jpg" alt="" class="gambar-content"></a>
+                    <a href="https://www.youtube.com/"><img src="assets/image/bogor-v1.jpg" alt=""
+                            class="gambar-content"></a>
                     <div class="text-overlay">Bogor</div>
                 </div>
                 <div class="col-md-4 position-relative" data-aos="fade-up">
@@ -105,10 +80,10 @@
             <button type="button" class="btn btn-light">Alam</button>
         </div>
         <div class="row">
-            <div class="col position-relative" data-aos="fade-up">
+            <a href="aceh.php" class="col position-relative" data-aos="fade-up">
                 <img src="assets/image/Jelajah Masjid Thumbnail 2).jpg" alt="" width="100%" class="gam-populer">
                 <div class="text-overlay">Masjid</div>
-            </div>
+            </a>
             <div class="col position-relative" data-aos="fade-up">
                 <img src="assets/image/Jakarta_thumbnail.jpg" alt="" width="100%" class="gam-populer">
                 <div class="text-overlay">Jakarta</div>
@@ -135,10 +110,10 @@
                 <img src="assets/image/rajaampatbaruu-v1.jpg" alt="" width="100%" class="gam-populer">
                 <div class="text-overlay">Raja Ampat</div>
             </div>
-            <div class="col position-relative" data-aos="fade-up">
+            <a href="labuhan-bajo.php" class="col position-relative" data-aos="fade-up">
                 <img src="assets/image/Labuan-Bajo-Thumbnail-v1.jpg" alt="" width="100%" class="gam-populer">
                 <div class="text-overlay">Labuan Bajo</div>
-            </div>
+            </a>
         </div>
     </div>
     <hr class="container">
@@ -149,41 +124,50 @@
         <img src="assets/image/headerborobudur.jpg" alt="" class="header-img img-fluid" width="100%">
         <div class="text-overlay borobudur">Jelajahi Borobudur
         </div>
-        <p class="text container">Borobudur cocok untuk semua orang <br>. Dapatkan tip tentang berwisata di Jogja bagi penyandang disabilitas <br>r dan pelajari cara menjadikan perjalanan Anda tak akan terlupakan.</p>
+        <p class="text container">Borobudur cocok untuk semua orang <br>. Dapatkan tip tentang berwisata di Jogja bagi
+            penyandang disabilitas <br>r dan pelajari cara menjadikan perjalanan Anda tak akan terlupakan.</p>
     </div>
     <!-- konten 3 -->
 
     <!-- panduan -->
     <div class="container">
-        <h2 id="panduan" data-aos="fade-up" >Panduan Perjalanan</h2>
+        <h2 id="panduan" data-aos="fade-up">Panduan Perjalanan</h2>
         <div class="row">
             <div class="col-sm-4 position-relative">
                 <img src="assets/image/idocare.jpg" alt="" class="panduan" data-aos="fade-up">
                 <div class="text-keteranga">Teks InDonesia CARE</div>
-                <p data-aos="fade-up">Kementerian Pariwisata dan Ekonomi Kreatif mempersembahkan InDOnesia CARE, sebuah simbol dukungan berupa panduan protokol kesehatan pariwisata yang mengedepankan usaha terbaik dalam mewujudkan kebersihan, kesehatan, keselamatan, dan kelestarian lingkungan bersama di destinasi pariwisata Indonesia.</p>
+                <p data-aos="fade-up">Kementerian Pariwisata dan Ekonomi Kreatif mempersembahkan InDOnesia CARE, sebuah
+                    simbol dukungan berupa panduan protokol kesehatan pariwisata yang mengedepankan usaha terbaik dalam
+                    mewujudkan kebersihan, kesehatan, keselamatan, dan kelestarian lingkungan bersama di destinasi
+                    pariwisata Indonesia.</p>
             </div>
             <div class="col-sm-4 position-relative">
                 <img src="assets/image/e-paspor.jpg" alt="" data-aos="fade-up" class="panduan">
                 <div class="text-keteranga">E-Visa</div>
-                <p data-aos="fade-up">Pastikan untuk mempelajari semua persyaratan keimigrasian yang harus dipenuhi sebelum mengunjungi Indonesia, termasuk e-paspor dan e-visa.</p>
+                <p data-aos="fade-up">Pastikan untuk mempelajari semua persyaratan keimigrasian yang harus dipenuhi
+                    sebelum mengunjungi Indonesia, termasuk e-paspor dan e-visa.</p>
             </div>
             <div class="col-sm-4 position-relative">
                 <img src="assets/image/informasi-umum-v1.jpg" alt="" class="panduan" data-aos="fade-up">
                 <div class="text-keteranga">Informasi Umum</div>
-                <p data-aos="fade-up">Temukan semua yang perlu Sobat Pesona ketahui tentang cara menuju ke sini, peraturan apa yang harus diperhatikan, dan banyak hal penting lainnya dalam mengatur rencana perjalanan Sobat Pesona ke Indonesia. </p>
+                <p data-aos="fade-up">Temukan semua yang perlu Sobat Pesona ketahui tentang cara menuju ke sini,
+                    peraturan apa yang harus diperhatikan, dan banyak hal penting lainnya dalam mengatur rencana
+                    perjalanan Sobat Pesona ke Indonesia. </p>
             </div>
-            
+
         </div>
     </div>
     <!-- akhir panduan -->
 
     <!-- Why AVIATOUR -->
-     <div class="AVIATOUR container">
+    <div class="AVIATOUR container">
         <h2 class="text-center mb-5" data-aos="fade-up">Why AVIATOUR</h2>
         <div class="row">
             <div class="col-md-3">
                 <h3 class="text-left" data-aos="fade-up">Pelayanan Terbaik dan Personal</h3>
-                <p class="text-left" data-aos="fade-up">Kami mengetahui bahwa kepentingan anda lebih utama dari program apapun yang dapat kami tawarkan. Penyediaan layanan yang terbaik bagi setiap pribadi menjadi prinsip kami dalam menyempurnakan perjalanan anda.</p>
+                <p class="text-left" data-aos="fade-up">Kami mengetahui bahwa kepentingan anda lebih utama dari program
+                    apapun yang dapat kami tawarkan. Penyediaan layanan yang terbaik bagi setiap pribadi menjadi prinsip
+                    kami dalam menyempurnakan perjalanan anda.</p>
             </div>
             <div class="col-md-3">
                 <img src="assets/image/DMMTt38W0AEczNR1.jpg" alt="" width="100%" data-aos="fade-up" class="rounded">
@@ -193,36 +177,41 @@
             </div>
             <div class="col-md-3">
                 <h3 class="text-right" data-aos="fade-up">Pelayanan Terbaik dan Personal</h3>
-                <p class="text-right" data-aos="fade-up">Kami mengetahui bahwa kepentingan anda lebih utama dari program apapun yang dapat kami tawarkan. Penyediaan layanan yang terbaik bagi setiap pribadi menjadi prinsip kami dalam menyempurnakan perjalanan anda.</p>
+                <p class="text-right" data-aos="fade-up">Kami mengetahui bahwa kepentingan anda lebih utama dari program
+                    apapun yang dapat kami tawarkan. Penyediaan layanan yang terbaik bagi setiap pribadi menjadi prinsip
+                    kami dalam menyempurnakan perjalanan anda.</p>
             </div>
         </div>
         <div class="row mt-3">
             <div class="col-md-3">
                 <h3 class="text-left" data-aos="fade-up">Pelayanan Terbaik dan Personal</h3>
-                <p class="text-left" data-aos="fade-up">Kami mengetahui bahwa kepentingan anda lebih utama dari program apapun yang dapat kami tawarkan. Penyediaan layanan yang terbaik bagi setiap pribadi menjadi prinsip kami dalam menyempurnakan perjalanan anda.</p>
+                <p class="text-left" data-aos="fade-up">Kami mengetahui bahwa kepentingan anda lebih utama dari program
+                    apapun yang dapat kami tawarkan. Penyediaan layanan yang terbaik bagi setiap pribadi menjadi prinsip
+                    kami dalam menyempurnakan perjalanan anda.</p>
             </div>
             <div class="col-md-3">
                 <img src="assets/image/borobudur-v1.jpg" alt="" width="100%" data-aos="fade-up" class="card">
             </div>
             <div class="col-md-3">
-                <img src="assets/image/18514134_699802516873350_6954135892898349056_n1.jpg" alt="" width="100%" data-aos="fade-up" class="rounded">
+                <img src="assets/image/18514134_699802516873350_6954135892898349056_n1.jpg" alt="" width="100%"
+                    data-aos="fade-up" class="rounded">
             </div>
             <div class="col-md-3">
                 <h3 class="text-right" data-aos="fade-up">Pelayanan Terbaik dan Personal</h3>
-                <p class="text-right" data-aos="fade-up">Kami mengetahui bahwa kepentingan anda lebih utama dari program apapun yang dapat kami tawarkan. Penyediaan layanan yang terbaik bagi setiap pribadi menjadi prinsip kami dalam menyempurnakan perjalanan anda.</p>
+                <p class="text-right" data-aos="fade-up">Kami mengetahui bahwa kepentingan anda lebih utama dari program
+                    apapun yang dapat kami tawarkan. Penyediaan layanan yang terbaik bagi setiap pribadi menjadi prinsip
+                    kami dalam menyempurnakan perjalanan anda.</p>
             </div>
         </div>
-     </div>
-
-     <!-- footer -->
-      <footer class="footer footer-primary">
-        Copyright 2024 Ahmad Fadlan
-      </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <?php
+    include("footer.php");
+    ?>
 </body>
 
 </html>
