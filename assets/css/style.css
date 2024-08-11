@@ -237,9 +237,13 @@ span {
 
 /* footer */
 footer {
-    background-color: #000000;
+    background-color: #7694c5 !important;
     padding: 20px;
     text-align: center;
     color: #f6eeee;
     margin-top: 50px;
+}
+
+footer .row .col .link a {
+    text-decoration: none;
 }

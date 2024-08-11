@@ -24,10 +24,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto py-3">
-                    <a href="index.php" class="nav-link px-3">Beranda</a>
-                    <a href="/rigester.html" class="nav-link px-3">Destinasi Wisata</a>
-                    <a href="daftar_pesanan.php" class="nav-link px-3">Daftar Pesanan</a>
-                    <a href="pesanan.php" class="nav-link px-3">Pemesanan Paket Wisata</a>
+                    <a href="index.php" class="nav-link nav-item px-3">Beranda</a>
+                    <a href="/rigester.html" class="nav-link  nav-item px-3">Destinasi Wisata</a>
+                    <a href="daftar_pesanan.php" class="nav-link  nav-item px-3">Daftar Pesanan</a>
+                    <a href="pesanan.php" class="nav-link  nav-item px-3">Pemesanan Paket Wisata</a>
                 </div>
             </div>
         </div>

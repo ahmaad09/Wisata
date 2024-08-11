@@ -6,7 +6,7 @@ $result = mysqli_query($conn, "SELECT * FROM pesanan WHERE id = $id");
 $row = mysqli_fetch_assoc($result);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Update logic here...
+  
     header('Location: daftar_pesanan.php');
 }
 
