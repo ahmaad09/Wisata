@@ -194,13 +194,11 @@ span {
     margin-bottom: 50px;
 }
 
-.position-relative {
-    position: relative;
-}
+
 
 .text-keteranga {
     position: absolute;
-    bottom: 170px;
+    bottom: 180px;
     /* Atur posisi teks dari bawah */
     left: 20px;
     /* Atur posisi teks dari kiri */
@@ -216,6 +214,7 @@ span {
 
 .panduan {
     border-radius: 10px;
+   margin-left: 10px;
 }
 
 /* akhir panduan */
@@ -237,7 +236,7 @@ span {
 
 /* footer */
 footer {
-    background-color: #7694c5 !important;
+    background-color: #091426 !important;
     padding: 20px;
     text-align: center;
     color: #f6eeee;

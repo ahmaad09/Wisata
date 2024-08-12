@@ -1,5 +1,5 @@
 <?php
-include("header.php");
+include ("header.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +8,7 @@ include("header.php");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wisata</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?= $main_url ?>assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -19,11 +19,13 @@ include("header.php");
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 <body>
 
-   <!-- Awal jumbotron -->
+    <!-- Awal jumbotron -->
     <div class="jumbotron " data-aos="fade-up">
         <img src="assets/image/desktop.adapt.1920.high.jpg" alt="" class="jumbotron">
         <div class="row">
@@ -38,23 +40,120 @@ include("header.php");
     <main class="my-5">
         <div class="container">
             <div class="row">
+                <!-- Gambar 1: Bogor -->
                 <div class="col-md-4 position-relative" data-aos="fade-up">
-                    <a href="https://www.youtube.com/"><img src="assets/image/bogor-v1.jpg" alt=""
-                            class="gambar-content"></a>
+                    <img src="assets/image/bogor-v1.jpg" alt="" class="gambar-content" data-bs-toggle="modal"
+                        data-bs-target="#modalBogor">
                     <div class="text-overlay">Bogor</div>
                 </div>
+
+                <!-- Modal untuk Bogor -->
+                <div class="modal fade" id="modalBogor" tabindex="-1" aria-labelledby="modalLabelBogor"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLabelBogor">Wisata Bogor</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/image/bogor-v1.jpg" alt="" class="img-fluid">
+                                <p class=" mt-3">
+                                    Bogor, yang dikenal dengan sebutan Kota Hujan, adalah salah satu destinasi wisata
+                                    populer di Jawa Barat. Dengan udara yang sejuk dan pemandangan alam yang indah,
+                                    Bogor menawarkan berbagai atraksi menarik seperti Kebun Raya Bogor yang merupakan
+                                    salah satu kebun raya tertua di Asia, Istana Bogor yang bersejarah, dan berbagai air
+                                    terjun yang eksotis. Selain itu, Bogor juga terkenal dengan kuliner khasnya seperti
+                                    asinan Bogor dan toge goreng.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="pesanan.php" class="btn btn-primary" data-bs-dismiss="modal">Pesan</a>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gambar 2: Pulau Padar -->
                 <div class="col-md-4 position-relative" data-aos="fade-up">
-                    <img src="assets/image/pulau-padar-v1.jpg" alt="" class="gambar-content">
+                    <img src="assets/image/pulau-padar-v1.jpg" alt="" class="gambar-content" data-bs-toggle="modal"
+                        data-bs-target="#modalPadar">
                     <div class="text-overlay">Pulau Padar</div>
                 </div>
+
+                <!-- Modal untuk Pulau Padar -->
+                <div class="modal fade" id="modalPadar" tabindex="-1" aria-labelledby="modalLabelPadar"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLabelPadar">Wisata Pulau Padar</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/image/pulau-padar-v1.jpg" alt="" class="img-fluid">
+                                <p class="mt-3">
+                                    Informasi Wisata Pulau Padar:
+                                    Pulau Padar adalah bagian dari Taman Nasional Komodo di Nusa Tenggara Timur dan
+                                    terkenal dengan pemandangan alamnya yang memukau. Pulau ini menawarkan lanskap
+                                    perbukitan dengan jalur trekking yang menantang namun sangat memuaskan dengan
+                                    pemandangan panorama laut dan pulau-pulau sekitarnya. Pulau Padar juga menjadi spot
+                                    favorit untuk fotografi karena memiliki pantai dengan pasir berwarna merah muda dan
+                                    pemandangan matahari terbit yang spektakuler.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="pesanan.php" class="btn btn-primary" data-bs-dismiss="modal">Pesan</a>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gambar 3: Likupang -->
                 <div class="col-md-4 position-relative" data-aos="fade-up">
-                    <img src="assets/image/Likupang.jpg" alt="" class="gambar-content">
+                    <img src="assets/image/Likupang.jpg" alt="" class="gambar-content" data-bs-toggle="modal"
+                        data-bs-target="#modalLikupang">
                     <div class="text-overlay">Likupang</div>
+                </div>
+
+                <!-- Modal untuk Likupang -->
+                <div class="modal fade" id="modalLikupang" tabindex="-1" aria-labelledby="modalLabelLikupang"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLabelLikupang">Wisata Likupang</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="assets/image/Likupang.jpg" alt="" class="img-fluid">
+                                <p class="mt-3">
+                                    Informasi Wisata Likupang:
+                                    Likupang adalah sebuah kawasan wisata di Sulawesi Utara yang sedang berkembang dan
+                                    menjadi destinasi super prioritas di Indonesia. Terkenal dengan pantai-pantai
+                                    berpasir putihnya yang bersih dan perairan yang jernih, Likupang menawarkan
+                                    pengalaman snorkeling dan diving yang menakjubkan dengan terumbu karang yang masih
+                                    alami. Selain pantai, Likupang juga menawarkan pengalaman budaya dengan mengunjungi
+                                    desa-desa lokal yang masih mempertahankan tradisi dan adat istiadat mereka.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="pesanan.php" class="btn btn-primary">Pesan</a>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
     <!-- Akhir Konten -->
+
 
     <!-- Konten 2 -->
     <div class="row my-5" data-aos="fade-up">
@@ -62,8 +161,8 @@ include("header.php");
             <div class="container">
                 <img src="assets/image/danau.avif" alt="" width="100%" class="gamb-conten2">
                 <span>
-                    <button class="btn btn-outline-light p-3">Lihat Selengkapnya</button>
-                </span>
+                    <a href="https://www.kemenparekraf.go.id/dsp/danau-toba" class="btn btn-outline-light p-3">Lihat Selengkapnya</button>
+                </span>butt
             </div>
         </div>
     </div>
@@ -210,7 +309,7 @@ include("header.php");
         AOS.init();
     </script>
     <?php
-    include("footer.php");
+    include ("footer.php");
     ?>
 </body>
 
