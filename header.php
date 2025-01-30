@@ -16,7 +16,7 @@
 <body>
     <header class="main-nav navbar navbar-expand-md sticky-top">
         <div class="container">
-            <img src="assets/image/logo.png" alt="" class="main-brand navbar-brand img-fluid" width="80px">
+            <img src="assets/image/logoda.png" alt="" class="main-brand navbar-brand img-fluid" width="100px">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"
                 style="border: none;">
@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto py-3">
                     <a href="index.php" class="nav-link nav-item px-3">Beranda</a>
-                    <a href="/rigester.html" class="nav-link  nav-item px-3">Destinasi Wisata</a>
+                    <a href="#populer" class="nav-link  nav-item px-3">Destinasi Wisata</a>
                     <a href="daftar_pesanan.php" class="nav-link  nav-item px-3">Daftar Pesanan</a>
                     <a href="pesanan.php" class="nav-link  nav-item px-3">Pemesanan Paket Wisata</a>
                 </div>

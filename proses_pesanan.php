@@ -1,21 +1,43 @@
 <?php
-include('koneksi.php');
+include('header.php');  
+include('koneksi.php');  
 
-$nama = $_POST['nama'];
-$durasi = $_POST['durasi'];
-$jumlah_peserta = $_POST['jumlah_peserta'];
-$pilihan = $_POST['pilihan'];
+if ($conn->connect_error) {
+    die("Koneksi gagal: " . $conn->connect_error);
+}
 
-$harga_paket = 0;
-if (in_array("Penginapan", $pilihan)) $harga_paket += 1000000;
-if (in_array("Transportasi", $pilihan)) $harga_paket += 1200000;
-if (in_array("Makanan", $pilihan)) $harga_paket += 500000;
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $nama = $_POST['nama'];
+    $durasi = $_POST['durasi'];
+    $jumlah_peserta = $_POST['jumlah_peserta'];
+    $pilihan = isset($_POST['pilihan']) ? $_POST['pilihan'] : [];
 
-$jumlah_tagihan = $durasi * $jumlah_peserta * $harga_paket;
+    // Daftar harga paket
+    $harga_paket = [
+        "Penginapan" => 1000000,
+        "Transportasi" => 1200000,
+        "Makanan" => 500000
+    ];
 
-$query = "INSERT INTO pesanan (nama, durasi, jumlah_peserta, harga_paket, jumlah_tagihan)
-          VALUES ('$nama', '$durasi', '$jumlah_peserta', '$harga_paket', '$jumlah_tagihan')";
-mysqli_query($conn, $query);
+    // Menghitung jumlah tagihan berdasarkan pilihan paket
+    $jumlah_tagihan = 0;
+    $pilihan_str = "";
 
-header('Location: daftar_pesanan.php');
+    if (!empty($pilihan)) {
+        foreach ($pilihan as $pilih) {
+            $jumlah_tagihan += $harga_paket[$pilih] ?? 0;
+        }
+        $pilihan_str = implode(", ", $pilihan);
+    }
+
+    // Query untuk memasukkan data pesanan ke database
+    $query = "INSERT INTO pesanan (nama, durasi, jumlah_peserta, pilihan, jumlah_tagihan) 
+              VALUES ('$nama', '$durasi', '$jumlah_peserta', '$pilihan_str', '$jumlah_tagihan')";
+
+    if ($conn->query($query) === TRUE) {
+        echo "<script>alert('Pemesanan berhasil!'); window.location.href='index.php';</script>";
+    } else {
+        echo "Error: " . $conn->error;
+    }
+}
 ?>

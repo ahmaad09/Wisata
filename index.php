@@ -1,5 +1,5 @@
 <?php
-include ("header.php");
+include("header.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,15 +26,16 @@ include ("header.php");
 <body>
 
     <!-- Awal jumbotron -->
-    <div class="jumbotron " data-aos="fade-up">
+    <div class="jumbotron" data-aos="fade-up">
+        <h3><span id="text-typed"></span></h3>
         <img src="assets/image/desktop.adapt.1920.high.jpg" alt="" class="jumbotron">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="assets/image/gday-in-lockup-shadow.png" alt="" width="400px" class="img-fluid gambar">
-            </div>
-        </div>
+    </div>
+    <div class="col-9">
+        <img src="assets/img/bogor.jpg" alt="">
+    </div>
     </div>
     <!-- Akhir Jumbotron -->
+
 
     <!-- Awal Konten -->
     <main class="my-5">
@@ -48,7 +49,7 @@ include ("header.php");
                 </div>
 
                 <!-- Modal untuk Bogor -->
-                <div class="modal fade" id="modalBogor" tabindex="-1" aria-labelledby="modalLabelBogor"
+                <div class="modal fade mx-3" id="modalBogor" tabindex="-1" aria-labelledby="modalLabelBogor"
                     aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
@@ -161,7 +162,8 @@ include ("header.php");
             <div class="container">
                 <img src="assets/image/danau.avif" alt="" width="100%" class="gamb-conten2">
                 <span>
-                    <a href="https://www.kemenparekraf.go.id/dsp/danau-toba" class="btn btn-outline-light p-3">Lihat Selengkapnya</button>
+                    <a href="https://www.kemenparekraf.go.id/dsp/danau-toba" class="btn btn-outline-light p-3">Lihat
+                        Selengkapnya</button>
                 </span>butt
             </div>
         </div>
@@ -169,8 +171,8 @@ include ("header.php");
     <!-- Konten 2 -->
 
     <!-- Tempat Populer -->
-    <div class="container my-5">
-        <h2>TEMPAT POPULER UNTUK DI KUNJUNGI</h2>
+    <div class="container my-5" id="populer">
+        <h2 id="populer">TEMPAT POPULER UNTUK DI KUNJUNGI</h2>
         <div class="menu mt-3 mb-3">
             <button type="button" class="btn btn-light">Populer</button>
             <button type="button" class="btn btn-light">Kota</button>
@@ -230,86 +232,99 @@ include ("header.php");
 
     <!-- panduan -->
     <div class="container">
-        <h2 id="panduan" data-aos="fade-up">Panduan Perjalanan</h2>
-        <div class="row">
-            <div class="col-sm-4 position-relative">
-                <img src="assets/image/idocare.jpg" alt="" class="panduan" data-aos="fade-up">
-                <div class="text-keteranga">Teks InDonesia CARE</div>
-                <p data-aos="fade-up">Kementerian Pariwisata dan Ekonomi Kreatif mempersembahkan InDOnesia CARE, sebuah
-                    simbol dukungan berupa panduan protokol kesehatan pariwisata yang mengedepankan usaha terbaik dalam
-                    mewujudkan kebersihan, kesehatan, keselamatan, dan kelestarian lingkungan bersama di destinasi
-                    pariwisata Indonesia.</p>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/image/thumbnail-morotai.jpg" class="gambar-1 d-block w-100" alt="...">
             </div>
-            <div class="col-sm-4 position-relative">
-                <img src="assets/image/e-paspor.jpg" alt="" data-aos="fade-up" class="panduan">
-                <div class="text-keteranga">E-Visa</div>
-                <p data-aos="fade-up">Pastikan untuk mempelajari semua persyaratan keimigrasian yang harus dipenuhi
-                    sebelum mengunjungi Indonesia, termasuk e-paspor dan e-visa.</p>
+            <div class="carousel-item">
+                <img src="assets/image/thumbnail.jpg" class="gambar-1 d-block w-100" alt="...">
             </div>
-            <div class="col-sm-4 position-relative">
-                <img src="assets/image/informasi-umum-v1.jpg" alt="" class="panduan" data-aos="fade-up">
-                <div class="text-keteranga">Informasi Umum</div>
-                <p data-aos="fade-up">Temukan semua yang perlu Sobat Pesona ketahui tentang cara menuju ke sini,
-                    peraturan apa yang harus diperhatikan, dan banyak hal penting lainnya dalam mengatur rencana
-                    perjalanan Sobat Pesona ke Indonesia. </p>
+            <div class="carousel-item">
+                <img src="assets/image/toba-thumbnail.jpg" class="gambar-1 d-block w-100" alt="...">
             </div>
-
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
+</div>
+
     <!-- akhir panduan -->
 
-    <!-- Why AVIATOUR -->
-    <div class="AVIATOUR container">
-        <h2 class="text-center mb-5" data-aos="fade-up">Why AVIATOUR</h2>
-        <div class="row">
-            <div class="col-md-3">
-                <h3 class="text-left" data-aos="fade-up">Pelayanan Terbaik dan Personal</h3>
-                <p class="text-left" data-aos="fade-up">Kami mengetahui bahwa kepentingan anda lebih utama dari program
-                    apapun yang dapat kami tawarkan. Penyediaan layanan yang terbaik bagi setiap pribadi menjadi prinsip
-                    kami dalam menyempurnakan perjalanan anda.</p>
-            </div>
-            <div class="col-md-3">
-                <img src="assets/image/DMMTt38W0AEczNR1.jpg" alt="" width="100%" data-aos="fade-up" class="rounded">
-            </div>
-            <div class="col-md-3">
-                <img src="assets/image/kangguru.jpg" alt="" width="100%" data-aos="fade-up">
-            </div>
-            <div class="col-md-3">
-                <h3 class="text-right" data-aos="fade-up">Pelayanan Terbaik dan Personal</h3>
-                <p class="text-right" data-aos="fade-up">Kami mengetahui bahwa kepentingan anda lebih utama dari program
-                    apapun yang dapat kami tawarkan. Penyediaan layanan yang terbaik bagi setiap pribadi menjadi prinsip
-                    kami dalam menyempurnakan perjalanan anda.</p>
-            </div>
+   <!-- Why AVIATOUR -->
+<div class="AVIATOUR container">
+    <h2 class="text-center mb-5" data-aos="fade-up">Why AVIATOUR</h2>
+    <div class="row align-items-center">
+        <div class="col-md-4" data-aos="fade-up">
+            <h3>Pelayanan Terbaik dan Personal</h3>
+            <p>Kami mengetahui bahwa kepentingan Anda lebih utama dari program apapun yang dapat kami tawarkan. 
+                Penyediaan layanan terbaik bagi setiap pribadi menjadi prinsip kami dalam menyempurnakan perjalanan Anda.</p>
         </div>
-        <div class="row mt-3">
-            <div class="col-md-3">
-                <h3 class="text-left" data-aos="fade-up">Pelayanan Terbaik dan Personal</h3>
-                <p class="text-left" data-aos="fade-up">Kami mengetahui bahwa kepentingan anda lebih utama dari program
-                    apapun yang dapat kami tawarkan. Penyediaan layanan yang terbaik bagi setiap pribadi menjadi prinsip
-                    kami dalam menyempurnakan perjalanan anda.</p>
-            </div>
-            <div class="col-md-3">
-                <img src="assets/image/borobudur-v1.jpg" alt="" width="100%" data-aos="fade-up" class="card">
-            </div>
-            <div class="col-md-3">
-                <img src="assets/image/18514134_699802516873350_6954135892898349056_n1.jpg" alt="" width="100%"
-                    data-aos="fade-up" class="rounded">
-            </div>
-            <div class="col-md-3">
-                <h3 class="text-right" data-aos="fade-up">Pelayanan Terbaik dan Personal</h3>
-                <p class="text-right" data-aos="fade-up">Kami mengetahui bahwa kepentingan anda lebih utama dari program
-                    apapun yang dapat kami tawarkan. Penyediaan layanan yang terbaik bagi setiap pribadi menjadi prinsip
-                    kami dalam menyempurnakan perjalanan anda.</p>
-            </div>
+        <div class="col-md-4 text-center" data-aos="fade-up">
+            <img src="assets/image/DMMTt38W0AEczNR1.jpg" alt="Pelayanan AVIATOUR" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+            <h3>Keamanan dan Kenyamanan</h3>
+            <p>Kami selalu memastikan perjalanan Anda aman dan nyaman dengan fasilitas terbaik serta pelayanan profesional.</p>
         </div>
     </div>
+
+    <div class="row align-items-center mt-4">
+        <div class="col-md-4 text-center" data-aos="fade-up">
+            <img src="assets/image/kangguru.jpg" alt="Destinasi Wisata" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+            <h3>Destinasi Menarik</h3>
+            <p>Kami menawarkan berbagai destinasi eksotis dan menarik dengan paket perjalanan yang fleksibel sesuai kebutuhan Anda.</p>
+        </div>
+        <div class="col-md-4 text-center" data-aos="fade-up">
+            <img src="assets/image/borobudur-v1.jpg" alt="Wisata Budaya" class="img-fluid card">
+        </div>
+    </div>
+
+    <div class="row align-items-center mt-4">
+        <div class="col-md-4" data-aos="fade-up">
+            <h3>Pengalaman Tak Terlupakan</h3>
+            <p>Setiap perjalanan bersama AVIATOUR dirancang untuk memberikan pengalaman yang tak terlupakan dan penuh makna.</p>
+        </div>
+        <div class="col-md-4 text-center" data-aos="fade-up">
+            <img src="assets/image/18514134_699802516873350_6954135892898349056_n1.jpg" alt="Pengalaman AVIATOUR" class="img-fluid rounded">
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+            <h3>Harga Terjangkau</h3>
+            <p>Dengan harga yang kompetitif, kami memastikan setiap pelanggan mendapatkan layanan terbaik tanpa mengorbankan kualitas.</p>
+        </div>
+    </div>
+</div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+    // Inisialisasi efek teks ketik
+    let typed = new Typed('#text-typed', {
+        strings: ['AYO KUNJUNGI WISATA FAVORIT ANDA SEKARANG'],
+        typeSpeed: 80,
+        backSpeed: 50,
+        loop: true 
+    });
+
+    const text = document.getElementById('text-typed'); 
+    text.style.float = 'left'; 
+    text.style.textAlign = 'center'; 
+</script>
+
     <?php
-    include ("footer.php");
+    include("footer.php");
     ?>
 </body>
 
